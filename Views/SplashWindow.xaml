@@ -1,0 +1,21 @@
+<ui:FluentWindow x:Class="UdemyKickerWPF.Views.SplashWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        Title="UdemyKicker - Loading" Height="300" Width="400"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        ExtendsContentIntoTitleBar="True"
+        WindowBackdropType="Mica"
+        Background="#0C1310"
+        Loaded="Window_Loaded">
+
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <ui:ProgressRing Width="60" Height="60" Margin="0,0,0,20" Foreground="#4edea3" IsIndeterminate="True"/>
+            <TextBlock x:Name="lblStatus" Text="Verifying License..." HorizontalAlignment="Center" Foreground="#bbcabf" FontSize="14"/>
+        </StackPanel>
+        <wv2:WebView2 x:Name="webView" Visibility="Collapsed" Width="0" Height="0"/>
+    </Grid>
+</ui:FluentWindow>

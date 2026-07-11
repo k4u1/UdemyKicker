@@ -1,0 +1,15 @@
+Unhandled exception: System.InvalidOperationException: Cannot see if a key has been pressed when either application does not have a console or when console input has been redirected from a file. Try Console.In.Peek.
+   at System.Console.get_KeyAvailable() + 0x3e
+   at Spectre.Console.DefaultInput.<ReadKeyAsync>d__4.MoveNext() + 0x7e
+--- End of stack trace from previous location ---
+   at Spectre.Console.ListPrompt`1.<Show>d__3.MoveNext() + 0x360
+--- End of stack trace from previous location ---
+   at Spectre.Console.MultiSelectionPrompt`1.<ShowAsync>d__42.MoveNext() + 0x74
+--- End of stack trace from previous location ---
+   at Spectre.Console.MultiSelectionPrompt`1.Show(IAnsiConsole) + 0x43
+   at N_m3u8DL_RE.Util.FilterUtil.SelectStreams(IEnumerable`1) + 0x4b8
+   at N_m3u8DL_RE.Program.<DoWorkAsync>d__3.MoveNext() + 0x1484
+--- End of stack trace from previous location ---
+   at System.CommandLine.Command.<>c__DisplayClass33_0.<<SetAction>b__0>d.MoveNext() + 0x51
+--- End of stack trace from previous location ---
+   at System.CommandLine.Invocation.InvocationPipeline.<InvokeAsync>d__0.MoveNext() + 0x1d2

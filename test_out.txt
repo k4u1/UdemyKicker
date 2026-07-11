@@ -1,0 +1,18 @@
+03:31:33.222 INFO : Output is redirected, ANSI colors are cleared.
+03:31:33.268 INFO : N_m3u8DL-RE (Beta version) 20251029
+03:31:33.272 INFO : Loading URL: https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+03:31:34.141 INFO : Content Matched: HTTP Live Streaming
+03:31:34.143 INFO : Parsing streams...
+03:31:34.147 WARN : Master List detected, try parse all streams
+03:31:34.156 WARN : Writing meta json
+03:31:34.160 INFO : Extracted, there are 5 streams, with 5 basic streams, 0 audio streams, 0 subtitle streams
+03:31:34.161 INFO : Vid 1920x1080 | 6221 Kbps | mp4a.40.2,avc1.640028
+03:31:34.163 INFO : Vid 1280x720 | 2149 Kbps | mp4a.40.2,avc1.64001f
+03:31:34.164 INFO : Vid 848x480 | 836 Kbps | mp4a.40.2,avc1.64001f
+03:31:34.166 INFO : Vid 512x288 | 460 Kbps | mp4a.40.5,avc1.420016
+03:31:34.167 INFO : Vid 320x184 | 246 Kbps | mp4a.40.5,avc1.42000d
+Please select what you want to download:                  
+> [ ] Basic                                               [X] Vid 1920x1080 | 6221 Kbps | mp4a.40.2,avc1.640028 [ ] Vid 1280x720 | 2149 Kbps | mp4a.40.2,avc1.64001f  [ ] Vid 848x480 | 836 Kbps | mp4a.40.2,avc1.64001f    [ ] Vid 512x288 | 460 Kbps | mp4a.40.5,avc1.420016    [ ] Vid 320x184 | 246 Kbps | mp4a.40.5,avc1.42000d    
+(Press <space> to toggle a stream, <enter> to accept)     Please select what you want to download:                  
+> [ ] Basic                                               [X] Vid 1920x1080 | 6221 Kbps | mp4a.40.2,avc1.640028 [ ] Vid 1280x720 | 2149 Kbps | mp4a.40.2,avc1.64001f  [ ] Vid 848x480 | 836 Kbps | mp4a.40.2,avc1.64001f    [ ] Vid 512x288 | 460 Kbps | mp4a.40.5,avc1.420016    [ ] Vid 320x184 | 246 Kbps | mp4a.40.5,avc1.42000d    
+(Press <space> to toggle a stream, <enter> to accept)     
