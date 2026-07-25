@@ -128,9 +128,9 @@ UdemyKicker is a premium utility that gives you the ultimate freedom to download
 To ensure you always have access to these exclusive features and continuous updates, UdemyKicker is available for a simple subscription of **$10 per month**.
 
 <p align="center">
-  <!-- Subscribe -->
-  <a href="#" target="_blank" rel="noopener noreferrer">
-    <img alt="Subscribe" src="https://img.shields.io/badge/Subscribe_Now_($10/mo)-1C1E26?style=for-the-badge&logo=paypal&labelColor=1C1E26&color=00457C"/>
+  <!-- Telegram Contact -->
+  <a href="https://t.me/K4uku" target="_blank" rel="noopener noreferrer">
+    <img alt="Contact on Telegram" src="https://img.shields.io/badge/Contact_Me_on_Telegram-1C1E26?style=for-the-badge&logo=telegram&labelColor=1C1E26&color=2CA5E0"/>
   </a>
 </p>
 
