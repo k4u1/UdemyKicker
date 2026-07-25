@@ -1,25 +1,192 @@
 <Application x:Class="UdemyKickerWPF.App"
-
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
              xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
-
              Startup="Application_Startup">
-
     <Application.Resources>
-
         <ResourceDictionary>
-
             <ResourceDictionary.MergedDictionaries>
-
+                <ui:ThemesDictionary Theme="Dark" />
                 <ui:ControlsDictionary />
-
             </ResourceDictionary.MergedDictionaries>
 
+            <!-- == DESIGN TOKENS (DESIGN.md spec) == -->
+
+            <!-- Primary accent -->
+            <SolidColorBrush x:Key="BrushCyberLime" Color="#4EDEA3"/>
+            <SolidColorBrush x:Key="BrushCyberLimeHover" Color="#5EECB0"/>
+            <SolidColorBrush x:Key="BrushCyberLimeActive" Color="#3CC08A"/>
+
+            <!-- Canvas backgrounds -->
+            <SolidColorBrush x:Key="BrushDeepVoid" Color="#0C1310"/>
+            <SolidColorBrush x:Key="BrushAbyss" Color="#0A1410"/>
+            <SolidColorBrush x:Key="BrushDarkCanopy" Color="#111A15"/>
+            <SolidColorBrush x:Key="BrushForestFloor" Color="#1A2D22"/>
+            <SolidColorBrush x:Key="BrushPineShadow" Color="#1D2A22"/>
+
+            <!-- Text hierarchy -->
+            <SolidColorBrush x:Key="BrushCloudWhite" Color="#E5E2E3"/>
+            <SolidColorBrush x:Key="BrushMistGreen" Color="#BBCABF"/>
+            <SolidColorBrush x:Key="BrushAshGreen" Color="#9DB0A6"/>
+            <SolidColorBrush x:Key="BrushStone" Color="#6B7F75"/>
+
+            <!-- Borders -->
+            <SolidColorBrush x:Key="BrushBorderSubtle" Color="#1AFFFFFF"/>
+            <SolidColorBrush x:Key="BrushBorderVisible" Color="#2AFFFFFF"/>
+            <SolidColorBrush x:Key="BrushIronGreen" Color="#3C4A42"/>
+
+            <!-- Semantic -->
+            <SolidColorBrush x:Key="BrushError" Color="#FF4545"/>
+            <SolidColorBrush x:Key="BrushGoldStar" Color="#FFD700"/>
+            <SolidColorBrush x:Key="BrushAmberProgress" Color="#FFA303"/>
+
+            <!-- States -->
+            <SolidColorBrush x:Key="BrushStateHover" Color="#2A2A2A"/>
+            <SolidColorBrush x:Key="BrushStateDisabled" Color="#141916"/>
+
+            <!-- Legacy aliases (deprecated — migrate to DESIGN.md tokens) -->
+            <SolidColorBrush x:Key="BrushBrandPrimary" Color="#4EDEA3"/>
+            <SolidColorBrush x:Key="BrushBrandOnPrimary" Color="#0C1310"/>
+            <SolidColorBrush x:Key="BrushLegacyTextPrimary" Color="#E5E2E3"/>
+            <SolidColorBrush x:Key="BrushLegacyTextSecondary" Color="#BBCABF"/>
+            <SolidColorBrush x:Key="BrushLegacyHeaderBackground" Color="#1D2A22"/>
+            <SolidColorBrush x:Key="BrushOutline" Color="#3C4A42"/>
+            <SolidColorBrush x:Key="BrushBrandPrimaryContainer" Color="#1D2A22"/>
+            <SolidColorBrush x:Key="BrushOutlineVariant" Color="#264EDEA3"/>
+            <SolidColorBrush x:Key="BrushOnSurface" Color="White"/>
+
+            <!-- == STYLES == -->
+
+            <!-- Page fade-in: applied to all routed pages -->
+            <Style x:Key="PageFadeInStyle" TargetType="Page">
+                <Setter Property="Background" Value="Transparent"/>
+            </Style>
+
+            <!-- Default text box: search bars, input fields -->
+            <Style x:Key="DefaultTextBoxStyle" TargetType="ui:TextBox">
+                <Setter Property="Background" Value="{StaticResource BrushPineShadow}"/>
+                <Setter Property="Foreground" Value="{StaticResource BrushCloudWhite}"/>
+                <Setter Property="BorderBrush" Value="{StaticResource BrushIronGreen}"/>
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="Padding" Value="12,12"/>
+                <Setter Property="FontSize" Value="14"/>
+            </Style>
+
+            <!-- Primary Button: loud calls-to-action -->
+            <Style x:Key="PrimaryButtonStyle" TargetType="Button">
+                <Setter Property="Background" Value="{StaticResource BrushCyberLime}"/>
+                <Setter Property="Foreground" Value="{StaticResource BrushDeepVoid}"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="Padding" Value="16,8"/>
+                <Setter Property="Cursor" Value="Hand"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="root"
+                                    Background="{TemplateBinding Background}"
+                                    CornerRadius="6"
+                                    Padding="{TemplateBinding Padding}"
+                                    TextBlock.Foreground="{TemplateBinding Foreground}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="root" Property="Background" Value="{StaticResource BrushCyberLimeHover}"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter TargetName="root" Property="Background" Value="{StaticResource BrushCyberLimeActive}"/>
+                                </Trigger>
+                                <Trigger Property="IsEnabled" Value="False">
+                                    <Setter TargetName="root" Property="Background" Value="{StaticResource BrushStateDisabled}"/>
+                                    <Setter Property="Foreground" Value="{StaticResource BrushStone}"/>
+                                    <Setter Property="Opacity" Value="0.5"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!-- Secondary Button: neutral actions -->
+            <Style x:Key="SecondaryButtonStyle" TargetType="Button">
+                <Setter Property="Background" Value="{StaticResource BrushPineShadow}"/>
+                <Setter Property="Foreground" Value="{StaticResource BrushMistGreen}"/>
+                <Setter Property="BorderBrush" Value="{StaticResource BrushIronGreen}"/>
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="Padding" Value="16,8"/>
+                <Setter Property="Cursor" Value="Hand"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="root"
+                                    Background="{TemplateBinding Background}"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    CornerRadius="6"
+                                    Padding="{TemplateBinding Padding}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                  TextElement.Foreground="{TemplateBinding Foreground}"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="root" Property="BorderBrush" Value="{StaticResource BrushCyberLime}"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter Property="Foreground" Value="{StaticResource BrushCyberLime}"/>
+                                </Trigger>
+                                <Trigger Property="IsEnabled" Value="False">
+                                    <Setter TargetName="root" Property="Background" Value="{StaticResource BrushStateDisabled}"/>
+                                    <Setter TargetName="root" Property="BorderBrush" Value="{StaticResource BrushStateDisabled}"/>
+                                    <Setter Property="Foreground" Value="{StaticResource BrushStone}"/>
+                                    <Setter Property="Opacity" Value="0.5"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!-- Ghost Button: outline-style, transparent background -->
+            <Style x:Key="GhostButtonStyle" TargetType="Button">
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="Foreground" Value="{StaticResource BrushCyberLime}"/>
+                <Setter Property="BorderBrush" Value="{StaticResource BrushCyberLime}"/>
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="Padding" Value="12,8"/>
+                <Setter Property="Cursor" Value="Hand"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="root"
+                                    Background="{TemplateBinding Background}"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    CornerRadius="6"
+                                    Padding="{TemplateBinding Padding}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                  TextElement.Foreground="{TemplateBinding Foreground}"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="root" Property="Background" Value="#1A4EDEA3"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter TargetName="root" Property="Background" Value="#264EDEA3"/>
+                                </Trigger>
+                                <Trigger Property="IsEnabled" Value="False">
+                                    <Setter Property="Foreground" Value="{StaticResource BrushStone}"/>
+                                    <Setter TargetName="root" Property="BorderBrush" Value="{StaticResource BrushStone}"/>
+                                    <Setter Property="Opacity" Value="0.5"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
         </ResourceDictionary>
-
     </Application.Resources>
-
 </Application>
