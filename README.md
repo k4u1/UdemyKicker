@@ -22,23 +22,18 @@
 <div align="center">
 	
   <strong>UdemyKicker</strong> is the most powerful desktop application designed to give you complete freedom over your purchased Udemy courses. Watch them offline, translate them to your language, bypass playback restrictions, and share them with friends seamlessly.<br><br>
-  
-  ![](https://i.imgur.com/nsaAgDU.gif)
 
-  <br>
-  <table border=0 cellspacing=5 cellpadding=5>
-  <tr>
-    <td><img src="./images/image1.jpg" width="350px" alt="Downloads Library"/></td>
-    <td><img src="./images/image2.jpg" width="350px" alt="Settings & Translation"/></td>
-  </tr>
-  <tr>
-    <td><img src="./images/image3.jpg" width="350px" alt="Course Sharing"/></td>
-    <td><img src="./images/image4.jpg" width="350px" alt="Video Player"/></td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center"><img src="./images/image5.jpg" width="350px" alt="Course Browser"/></td>
-  </tr>
-  </table>  
+  <p align="center">
+    <img src="./images/image1.jpg" width="49%" alt="Downloads Library"/>
+    <img src="./images/image2.jpg" width="49%" alt="Settings & Translation"/>
+  </p>
+  <p align="center">
+    <img src="./images/image3.jpg" width="49%" alt="Course Sharing"/>
+    <img src="./images/image4.jpg" width="49%" alt="Video Player"/>
+  </p>
+  <p align="center">
+    <img src="./images/image5.jpg" width="80%" alt="Course Browser"/>
+  </p>
 </div>
 
 <br>

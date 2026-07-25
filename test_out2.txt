@@ -1,36 +1,0 @@
-03:33:02.163 INFO : Output is redirected, ANSI colors are cleared.
-03:33:02.204 INFO : N_m3u8DL-RE (Beta version) 20251029
-03:33:02.207 INFO : Loading URL: https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
-03:33:03.288 INFO : Content Matched: HTTP Live Streaming
-03:33:03.290 INFO : Parsing streams...
-03:33:03.293 WARN : Master List detected, try parse all streams
-03:33:03.308 WARN : Writing meta json
-03:33:03.310 INFO : Extracted, there are 5 streams, with 5 basic streams, 0 audio streams, 0 subtitle streams
-03:33:03.312 INFO : Vid 1920x1080 | 6221 Kbps | mp4a.40.2,avc1.640028
-03:33:03.313 INFO : Vid 1280x720 | 2149 Kbps | mp4a.40.2,avc1.64001f
-03:33:03.315 INFO : Vid 848x480 | 836 Kbps | mp4a.40.2,avc1.64001f
-03:33:03.317 INFO : Vid 512x288 | 460 Kbps | mp4a.40.5,avc1.420016
-03:33:03.318 INFO : Vid 320x184 | 246 Kbps | mp4a.40.5,avc1.42000d
-03:33:03.320 INFO : Parsing streams...
-03:33:03.763 INFO : Selected streams:
-03:33:03.764 INFO : Vid 1920x1080 | 6221 Kbps | mp4a.40.2,avc1.640028 | 64 Segments | ~10m34s
-03:33:03.767 WARN : Writing meta json
-03:33:03.770 INFO : Save Name: test
-03:33:03.771 WARN : MuxAfterDone is detected, binary merging is automatically enabled
-03:33:03.775 INFO : Start downloading...Vid 1920x1080 | 6221 Kbps | mp4a.40.2,avc1.640028
-03:33:03.778 WARN : Reading media info...
-                                                                                      
-Vid 1920x1080 | 6221 Kbps ------------------------------ 1/64 1.56% - 0.00Bps 00:00:00
-Vid 1920x1080 | 6221 Kbps ------------------------------ 1/64 1.56% - 0.00Bps 00:00:00
-Vid 1920x1080 | 6221 Kbps ------------------------------ 1/64 1.56% 5.07MB/324.23MB 5.07MBps 00:00:00
-Vid 1920x1080 | 6221 Kbps ------------------------------ 1/64 1.56% 5.07MB/324.23MB 0.00Bps(1) 00:00:0003:33:05.269 INFO : [0x101]: Audio, aac (LC) ([15][0][0][0]), 153 kb/s
-Vid 1920x1080 | 6221 Kbps ------------------------------ 1/64 1.56% 5.07MB/324.23MB 0.00Bps(1) 00:00:0003:33:05.271 INFO : [0x102]: Video, h264 (High) ([27][0][0][0]), 1920x1080, 60 fps
-Vid 1920x1080 | 6221 Kbps ------------------------------ 1/64 1.56% 5.07MB/324.23MB 0.00Bps(1) 00:00:00
-Vid 1920x1080 | 6221 Kbps ------------------------------ 1/64 1.56% 5.07MB/324.23MB 0.00Bps(1) 00:00:00
-Vid 1920x1080 | 6221 Kbps ------------------------------ 1/64 1.56% 5.07MB/324.23MB 0.00Bps(2) 00:00:00
-Vid 1920x1080 | 6221 Kbps ------------------------------ 1/64 1.56% 5.10MB/326.17MB 31.13KBps 00:00:00 
-Vid 1920x1080 | 6221 Kbps ------------------------------ 1/64 1.56% 5.30MB/339.17MB 208.00KBps 00:00:00
-Vid 1920x1080 | 6221 Kbps ------------------------------ 1/64 1.56% 5.59MB/357.71MB 296.55KBps 00:00:00
-Vid 1920x1080 | 6221 Kbps ------------------------------ 1/64 1.56% 5.61MB/359.06MB 21.71KBps 00:00:00 
-Vid 1920x1080 | 6221 Kbps ------------------------------ 1/64 1.56% 6.28MB/402.06MB 688.00KBps 00:00:00
-Vid 1920x1080 | 6221 Kbps ------------------------------ 1/64 1.56% 6.69MB/428.06MB 416.00KBps 00:00:00
