@@ -7,7 +7,7 @@
 <p align="center">
 
   <a href="https://github.com/k4u1/UdemyKicker/releases" target="_blank" rel="noopener noreferrer">
-     <img alt="releases url" src="https://img.shields.io/github/v/release/your-username/UdemyKickerWPF?style=for-the-badge&labelColor=1C1E26&color=2ea043"/>
+     <img alt="releases url" src="https://img.shields.io/github/v/release/k4u1/UdemyKicker?style=for-the-badge&labelColor=1C1E26&color=2ea043"/>
   </a>
 
   <a href="#" target="_blank" rel="noopener noreferrer">
