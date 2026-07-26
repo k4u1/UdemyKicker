@@ -52,7 +52,21 @@ UdemyKicker is packed with groundbreaking, exclusive features that you will not 
 Unlike older tools that simply skip encrypted videos, UdemyKicker features an advanced decryption engine. It seamlessly unlocks and downloads DRM-protected (Widevine) courses, ensuring you get 100% of your course content, every single time. No more "Video Skipped" errors!
 
 ### 🌍 Real-Time Subtitle Translation
-Want to learn a course that is only available in English? UdemyKicker integrates directly with top-tier Cloud APIs (Google, DeepL, Yandex). With a single click, it will automatically translate the entire course's subtitles into Arabic, Spanish, French, or any language of your choice before the download even begins. 
+Want to learn a course that is only available in English? **UdemyKicker** breaks all language barriers! It integrates seamlessly with top-tier Cloud APIs (Google, DeepL, Bing Pro/Free) to deliver highly accurate translations on the fly. With a single click, it will automatically translate the entire course's subtitles before the download even begins. 
+
+**Available Languages Include:**
+* 🇸🇦 Arabic (العربية)
+* 🇪🇸 Spanish (Español)
+* 🇫🇷 French (Français)
+* 🇩🇪 German (Deutsch)
+* 🇮🇹 Italian (Italiano)
+* 🇵🇹 Portuguese (Português)
+* 🇷🇺 Russian (Русский)
+* 🇹🇷 Turkish (Türkçe)
+* 🇨🇳 Chinese (中文)
+* 🇯🇵 Japanese (日本語)
+* 🇰🇷 Korean (한국어)
+* *...and over 100+ other languages supported by Cloud APIs!*
 
 ### 🤖 Zero-Setup Auto Login
 Forget about installing complicated browser extensions just to log in! UdemyKicker features intelligent **Cookie Scoop** technology. The moment you open the app, it automatically detects your active Udemy sessions from Chrome, Edge, or Firefox and logs you in instantly. If you prefer, you can also use our secure built-in browser window to log in directly.
@@ -65,6 +79,19 @@ Want to share a course with a friend? UdemyKicker uses a revolutionary **Manifes
 
 ### 🎬 Immersive Integrated Player
 You don't need a third-party media player. UdemyKicker comes with a beautiful, distraction-free built-in video player designed specifically for learning. It supports translated subtitles, speed control, and tracks your viewing progress automatically.
+
+### 🔎 Advanced Smart Filtering
+Instantly find exactly what you're looking for in massive libraries. Our modern, compact search interface allows you to filter your courses by:
+- **DRM Status:** Instantly see which courses are standard and which are encrypted (Widevine).
+- **Course Rating:** Filter by minimum star ratings (e.g., 4.5+ stars).
+- **Duration:** Find quick tutorials under 2 hours or deep-dives over 20 hours.
+- **Publish Date:** Keep your learning up to date by filtering for recently updated courses.
+
+### ⚡ Background Auto-Fetching & Real-Time DRM Detection
+No more clicking "Load More" endlessly! The moment you open your library, UdemyKicker intelligently fetches all your course pages automatically in the background. Concurrently, it performs real-time, lightning-fast DRM checks on every course so you know exactly what you're downloading before you even start—all without ever slowing down the user interface.
+
+### 🛡️ Multi-Account Vault
+Have multiple Udemy accounts for different topics? The **Vault Accounts** feature allows you to securely save multiple login sessions. Our beautifully redesigned settings interface displays your accounts as clean circular avatars, allowing you to seamlessly switch between or share specific accounts with a single click.
 
 ---
 
@@ -98,15 +125,18 @@ In addition to its exclusive capabilities, UdemyKicker excels at all the essenti
 
 Before running UdemyKicker, please ensure you have the following prerequisites installed:
 
-1. **.NET 5 Desktop Runtime:** 
+1. **Python & Required Libraries (First Step):**
+   The decryption and download engine relies on Python. This is the very first step you must do.
+   - Make sure you have Python installed and added to your system PATH.
+   - Open your terminal or command prompt in the project folder and run the following command to install all required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+   *(Alternatively, you can run the included `install_requirements.py` script for an interactive setup).*
+
+2. **.NET 5 Desktop Runtime:** 
    UdemyKicker is built on WPF and requires the .NET 5 Desktop Runtime to run. 
    - [Download .NET 5.0 Desktop Runtime (x64)](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) and install it on your Windows machine.
-
-2. **Python & Required Libraries:**
-   The decryption and download engine relies on Python. 
-   - Make sure you have Python installed and added to your system PATH.
-   - Run the included `install_requirements.py` script to install all the necessary Python libraries automatically.
-   *(Alternatively, you can run the `setup_portable_python.bat` script provided in the folder to set up a portable environment).*
 
 ---
 
@@ -130,7 +160,17 @@ To ensure you always have access to these exclusive features and continuous upda
 <p align="center">
   <!-- Telegram Contact -->
   <a href="https://t.me/K4uku" target="_blank" rel="noopener noreferrer">
-    <img alt="Contact on Telegram" src="https://img.shields.io/badge/Contact_Me_on_Telegram-1C1E26?style=for-the-badge&logo=telegram&labelColor=1C1E26&color=2CA5E0"/>
+    <img alt="Contact on Telegram" src="https://img.shields.io/badge/Contact_Me-1C1E26?style=for-the-badge&logo=telegram&labelColor=1C1E26&color=2CA5E0"/>
+  </a>
+  &nbsp;
+  <!-- Telegram Channels -->
+  <a href="https://t.me/YOUR_CHANNELS_LINK" target="_blank" rel="noopener noreferrer">
+    <img alt="Join our Channels" src="https://img.shields.io/badge/Join_Our_Channels-1C1E26?style=for-the-badge&logo=telegram&labelColor=1C1E26&color=2CA5E0"/>
+  </a>
+  &nbsp;
+  <!-- Telegram Group -->
+  <a href="https://t.me/YOUR_GROUP_LINK" target="_blank" rel="noopener noreferrer">
+    <img alt="Join our Group" src="https://img.shields.io/badge/Join_Our_Group-1C1E26?style=for-the-badge&logo=telegram&labelColor=1C1E26&color=2CA5E0"/>
   </a>
 </p>
 
