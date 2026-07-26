@@ -24,15 +24,19 @@
   <strong>UdemyKicker</strong> is the most powerful desktop application designed to give you complete freedom over your purchased Udemy courses. Watch them offline, translate them to your language, bypass playback restrictions, and share them with friends seamlessly.<br><br>
 
   <p align="center">
-    <img src="./images/image1.jpg" width="49%" alt="Downloads Library"/>
-    <img src="./images/image2.jpg" width="49%" alt="Settings & Translation"/>
+    <img src="./images/image (1).jpg" width="49%" alt="Downloads Library"/>
+    <img src="./images/image (4).jpg" width="49%" alt="Video Player"/>
   </p>
   <p align="center">
-    <img src="./images/image3.jpg" width="49%" alt="Course Sharing"/>
-    <img src="./images/image4.jpg" width="49%" alt="Video Player"/>
+    <img src="./images/image (5).jpg" width="49%" alt="Course Sharing System"/>
+    <img src="./images/image (2).jpg" width="49%" alt="Smart Subtitle Translator"/>
   </p>
   <p align="center">
-    <img src="./images/image5.jpg" width="80%" alt="Course Browser"/>
+    <img src="./images/image.jpg" width="49%" alt="Settings & Vault"/>
+    <img src="./images/image (6).jpg" width="49%" alt="Multi-Account Login"/>
+  </p>
+  <p align="center">
+    <img src="./images/image (3).jpg" width="80%" alt="App Logs & Diagnostics"/>
   </p>
 </div>
 
@@ -69,7 +73,7 @@ Want to learn a course that is only available in English? **UdemyKicker** breaks
 * *...and over 100+ other languages supported by Cloud APIs!*
 
 ### 🤖 Zero-Setup Auto Login
-Forget about installing complicated browser extensions just to log in! UdemyKicker features intelligent **Cookie Scoop** technology. The moment you open the app, it automatically detects your active Udemy sessions from Chrome, Edge, or Firefox and logs you in instantly. If you prefer, you can also use our secure built-in browser window to log in directly.
+Forget about installing complicated browser extensions just to log in! UdemyKicker features intelligent technology. The moment you open the app, it automatically detects your active Udemy sessions from Chrome, Edge, or Firefox and logs you in instantly. If you prefer, you can also use our secure built-in browser window to log in directly.
 
 ### 📦 Smart Course Sharing (.kcm)
 Want to share a course with a friend? UdemyKicker uses a revolutionary **Manifest System**:
@@ -87,8 +91,6 @@ Instantly find exactly what you're looking for in massive libraries. Our modern,
 - **Duration:** Find quick tutorials under 2 hours or deep-dives over 20 hours.
 - **Publish Date:** Keep your learning up to date by filtering for recently updated courses.
 
-### ⚡ Background Auto-Fetching & Real-Time DRM Detection
-No more clicking "Load More" endlessly! The moment you open your library, UdemyKicker intelligently fetches all your course pages automatically in the background. Concurrently, it performs real-time, lightning-fast DRM checks on every course so you know exactly what you're downloading before you even start—all without ever slowing down the user interface.
 
 ### 🛡️ Multi-Account Vault
 Have multiple Udemy accounts for different topics? The **Vault Accounts** feature allows you to securely save multiple login sessions. Our beautifully redesigned settings interface displays your accounts as clean circular avatars, allowing you to seamlessly switch between or share specific accounts with a single click.
@@ -132,22 +134,11 @@ Before running UdemyKicker, please ensure you have the following prerequisites i
    ```bash
    pip install -r requirements.txt
    ```
-   *(Alternatively, you can run the included `install_requirements.py` script for an interactive setup).*
 
 2. **.NET 5 Desktop Runtime:** 
    UdemyKicker is built on WPF and requires the .NET 5 Desktop Runtime to run. 
    - [Download .NET 5.0 Desktop Runtime (x64)](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) and install it on your Windows machine.
 
----
-
-## 📖 How to Use
-
-Using UdemyKicker is incredibly simple and requires no technical knowledge:
-
-1. **Launch the App:** Open UdemyKicker. It will automatically detect your browser session and log you in.
-2. **Browse Your Library:** All your enrolled courses will appear in a beautiful grid.
-3. **Customize & Download:** Click on a course, choose your preferred video quality, select a language for subtitle translation (optional), and hit Download.
-4. **Watch Offline:** Navigate to the "Downloads" tab or your Library to play your downloaded courses completely offline using the built-in player!
 
 ---
 
@@ -158,22 +149,15 @@ UdemyKicker is a premium utility that gives you the ultimate freedom to download
 To ensure you always have access to these exclusive features and continuous updates, UdemyKicker is available for a simple subscription of **$10 per month**.
 
 <p align="center">
-  <!-- Telegram Contact -->
   <a href="https://t.me/K4uku" target="_blank" rel="noopener noreferrer">
     <img alt="Contact on Telegram" src="https://img.shields.io/badge/Contact_Me-1C1E26?style=for-the-badge&logo=telegram&labelColor=1C1E26&color=2CA5E0"/>
   </a>
   &nbsp;
-  <!-- Telegram Channels -->
-  <a href="https://t.me/YOUR_CHANNELS_LINK" target="_blank" rel="noopener noreferrer">
+  <a href="https://t.me/addlist/YW6TDW3k6vVmZGQ6" target="_blank" rel="noopener noreferrer">
     <img alt="Join our Channels" src="https://img.shields.io/badge/Join_Our_Channels-1C1E26?style=for-the-badge&logo=telegram&labelColor=1C1E26&color=2CA5E0"/>
   </a>
   &nbsp;
-  <!-- Telegram Group -->
-  <a href="https://t.me/YOUR_GROUP_LINK" target="_blank" rel="noopener noreferrer">
-    <img alt="Join our Group" src="https://img.shields.io/badge/Join_Our_Group-1C1E26?style=for-the-badge&logo=telegram&labelColor=1C1E26&color=2CA5E0"/>
-  </a>
+  
 </p>
 
-## License
 
-[MIT © Your Name](https://github.com/your-username/UdemyKickerWPF/blob/master/LICENSE) <a href="#top">🔝</a>
