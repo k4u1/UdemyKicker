@@ -5,18 +5,15 @@
 </h1>
 
 <p align="center">
-  <!-- Version -->
-  <a href="https://github.com/your-username/UdemyKickerWPF/releases" target="_blank" rel="noopener noreferrer">
+
+  <a href="https://github.com/your-username/UdemyKicker/releases" target="_blank" rel="noopener noreferrer">
      <img alt="releases url" src="https://img.shields.io/github/v/release/your-username/UdemyKickerWPF?style=for-the-badge&labelColor=1C1E26&color=2ea043"/>
   </a>
-  <!-- Platform -->
+
   <a href="#" target="_blank" rel="noopener noreferrer">
     <img alt="Platform" src="https://img.shields.io/badge/platform-Windows-1C1E26?style=for-the-badge&labelColor=1C1E26&color=0078D6"/>
   </a>
-  <!-- License -->
-  <a href="https://github.com/your-username/UdemyKickerWPF/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">
-    <img alt="license url" src="https://img.shields.io/badge/license%20-MIT-1C1E26?style=for-the-badge&labelColor=1C1E26&color=61ffca"/>
-  </a>
+ 
 </p>
 
 <div align="center">
@@ -72,8 +69,11 @@ Want to learn a course that is only available in English? **UdemyKicker** breaks
 * 🇰🇷 Korean (한국어)
 * *...and over 100+ other languages supported by Cloud APIs!*
 
-### 🤖 Zero-Setup Auto Login
-Forget about installing complicated browser extensions just to log in! UdemyKicker features intelligent technology. The moment you open the app, it automatically detects your active Udemy sessions from Chrome, Edge, or Firefox and logs you in instantly. If you prefer, you can also use our secure built-in browser window to log in directly.
+### 🤖 Intelligent Auto & Manual Login
+Forget about installing complicated browser extensions just to log in! UdemyKicker features intelligent technology:
+- **Auto-Detection:** The moment you open the app, it automatically detects your active Udemy sessions from Chrome, Edge, or Firefox and logs you in instantly.
+- **Manual JSON Cookie Login:** If you prefer, or if auto-detection isn't available, you must log in by supplying your Udemy session cookies in **JSON format**. Simply paste your valid JSON cookies into the provided text area in the login window, and the software will securely initialize your session.
+- **Built-in Browser:** You can also use our secure built-in browser window to log in directly if you don't have JSON cookies on hand.
 
 ### 📦 Smart Course Sharing (.kcm)
 Want to share a course with a friend? UdemyKicker uses a revolutionary **Manifest System**:
